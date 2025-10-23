@@ -1,4 +1,12 @@
-from shapes import apply_custom_styles, create_header
+# Estilos e cabeçalho (opcionais). Se o módulo 'shapes' não existir, usa no-ops.
+try:
+    from shapes import apply_custom_styles, create_header  # type: ignore
+except Exception:
+    def apply_custom_styles():
+        return None
+
+    def create_header(logo_main_path=None, logo_secondary_path=None):
+        return None
 
 # Imports padrão e bibliotecas utilizadas no app
 import os
