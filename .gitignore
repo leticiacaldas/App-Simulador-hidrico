@@ -18,6 +18,7 @@ __pycache__/
 *.asc
 *.tfw
 *.zip
+shapes/
 
 # Artefatos/gerados
 *.mp4
