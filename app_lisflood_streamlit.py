@@ -1328,9 +1328,9 @@ def _post_process_simulation(model, _tmp_dir, anim_path, anim_format, total_rain
 
 
 def main():
-    # Configuração da página (título exatamente como solicitado e sem emoji/prefixo)
+    # Configuração da página: título atualizado para SimHidrion (sem emoji no page_title)
     st.set_page_config(
-        page_title="Simulador hibrido de inundações",
+        page_title="SimHidrion – Sistema de Simulação Hidrodinâmica para Análise de Inundações",
         page_icon=os.path.join(os.path.dirname(
             os.path.abspath(__file__)), "logos", "logo.png"),
         layout="wide",
@@ -1352,7 +1352,7 @@ def main():
                 st.image(LOGO_MAIN, width=160)
         with col_c:
             st.markdown(
-                "<h1 style='text-align:center; margin: 0;'>Simulador Híbrido de Inundações</h1>",
+                "<h1 style='text-align:center; margin: 0; font-size:32px;'>SimHidrion – Sistema de Simulação Hidrodinâmica para Análise de Inundações</h1>",
                 unsafe_allow_html=True,
             )
         with col_r:

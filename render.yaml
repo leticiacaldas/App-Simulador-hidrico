@@ -1,0 +1,10 @@
+services:
+  - type: web
+    # Nome do serviço no Render (ajustado para o novo nome do app)
+    name: SimHidrion
+    env: docker
+    dockerfilePath: Dockerfile
+    branch: main
+    plan: free
+    instanceCount: 1
+    autoDeploy: true
